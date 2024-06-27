@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('pln_materias', function (Blueprint $table) {
             $table->bigIncrements('id_materia'); // Clave primaria
-            $table->string('materia', 100); // Nombre de la materia
-            $table->timestamps();
+            $table->string('materia', 250); // Nombre de la materia
+            
         });
     }
 

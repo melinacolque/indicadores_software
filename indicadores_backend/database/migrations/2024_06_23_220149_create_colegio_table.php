@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('colegio', function (Blueprint $table) {
-            $table->bigIncrements('id_colegio'); // Clave primaria
+            $table->integer('id_colegio')->primary(); // Clave primaria
             $table->string('colegio', 255)->notNull(); // Nombre del colegio
             $table->unsignedBigInteger('id_tipo'); // ID del tipo de colegio
             $table->string('turno', 50)->notNull(); // Turno del colegio

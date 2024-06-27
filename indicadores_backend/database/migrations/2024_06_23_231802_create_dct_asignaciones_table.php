@@ -29,7 +29,7 @@ return new class extends Migration
             $table->foreign('id_docente')->references('id_docente')->on('docente')->onDelete('cascade');
             $table->foreign('id_gestion')->references('id_gestion')->on('gestion')->onDelete('cascade');
             $table->foreign('id_periodo')->references('id_periodo')->on('periodo')->onDelete('cascade');
-            $table->foreign('id_materia')->references('id_materia')->on('materia')->onDelete('cascade');
+            $table->foreign('id_materia')->references('id_materia')->on('pln_materias')->onDelete('cascade');
             $table->foreign('id_grupo')->references('id_grupo')->on('grupo')->onDelete('cascade');
             $table->foreign('id_programa')->references('id_programa')->on('programa')->onDelete('cascade');
         });        
